@@ -1,0 +1,26 @@
+#lex_auth_012693711503400960120
+
+def find_product(num1,num2,num3):
+    product=1
+    #write your logic here
+    count = 0
+    
+    for i in (num1,num2,num3):
+        if(i != 7):
+            product = product*i
+            count += 1
+        elif(i==7):
+            product = 1
+            count += 1
+    if(count == 3 and i==7):
+        product = -1
+     
+            
+   
+            
+  
+    return product
+
+#Provide different values for num1, num2, num3 and test your program
+product=find_product(4,2,7)
+print(product)
